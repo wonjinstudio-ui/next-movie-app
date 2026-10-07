@@ -1,0 +1,60 @@
+.card {
+  padding: 16px;
+  border: 1px solid #ddd;
+  border-radius: 12px;
+  background: white;
+  margin-bottom: 16px;
+}
+
+/* 찜 버튼: Base와 Answer에 동일하게 제공하는 UI 스타일 */
+.favoriteButton {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 7px;
+  min-height: 38px;
+  margin-right: 12px;
+  padding: 8px 15px;
+  border: 1px solid #fda4af;
+  border-radius: 999px;
+  background: #fff;
+  color: #9f1239;
+  font: inherit;
+  font-size: 14px;
+  font-weight: 700;
+  line-height: 1.2;
+  cursor: pointer;
+  transition: background-color 160ms ease, border-color 160ms ease, transform 160ms ease;
+}
+
+.favoriteButton:hover {
+  background: #fff1f2;
+  border-color: #e11d48;
+  transform: translateY(-1px);
+}
+
+.favoriteButton:focus-visible {
+  outline: 3px solid #fda4af;
+  outline-offset: 3px;
+}
+
+.favoriteIcon {
+  color: #e11d48;
+  font-size: 18px;
+  line-height: 1;
+}
+
+.favorited {
+  border-color: #e11d48;
+  background: #e11d48;
+  color: white;
+}
+
+.favorited .favoriteIcon {
+  color: white;
+}
+
+.favorited:hover {
+  border-color: #be123c;
+  background: #be123c;
+}
